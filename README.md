@@ -92,6 +92,6 @@ Navigate to the project directory and install the required dependencies for both
 
 ### 5. Additional Information
 - **Frontend:** The frontend is built with React and can be accessed via 'http://localhost:5173' after starting the frontend server.
-- **Backend:** The backend API is served via http://localhost:5000 after starting the backend server.
+- **Backend:** The backend API is served via http://localhost:your-port after starting the backend server.
 
 Thank you for using the UnionBank Web Application. If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/sdevmarc/UnionBank-Web/issues).
