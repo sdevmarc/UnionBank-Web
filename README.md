@@ -37,7 +37,7 @@ Navigate to the project directory and install the required dependencies for both
   ```sh
   npm install
   ```
-  - Create an **.env** file in the client directory with the following content:
+- Create an **.env** file in the client directory with the following content:
   ```sh
   VITE_HOST=http://your-server || localhost:3001
   VITE_ADMIN_TOKEN= your-admin-token || 1234567890 
