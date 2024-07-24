@@ -31,12 +31,9 @@ Navigate to the project directory and install the required dependencies for both
 Navigate to the client directory:
   ```sh
    cd client
-
+  
 Install the frontend dependencies:
   ```sh
-   npm install
-
-Start the frontend server:
-  ```sh
-    npm start
-
+  npm install
+```
+Install the frontend dependencies:
