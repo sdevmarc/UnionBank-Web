@@ -22,3 +22,21 @@ You can either download the project as a ZIP file or clone it via Git:
 - **Clone via Git**:
   ```sh
   git clone https://github.com/sdevmarc/UnionBank-Web.git
+
+### 2. Install Dependencies
+
+Navigate to the project directory and install the required dependencies for both the frontend and backend.
+
+- **For the Frontend**
+Navigate to the client directory:
+  ```sh
+   cd client
+
+Install the frontend dependencies:
+  ```sh
+   npm install
+
+Start the frontend server:
+  ```sh
+    npm start
+
