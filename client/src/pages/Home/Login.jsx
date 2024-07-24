@@ -156,6 +156,13 @@ export default function Login() {
                                         <h1 className='text-white'>123</h1>
                                     </div>
                                 </div>
+                                <div className="w-full flex justify-between items-center">
+                                    <h1 className='text-white'>ADMIN ROUTE</h1>
+                                    <div className="flex flex-col justify-center items-end gap-[.5rem]">
+                                        <h1 className='text-white'>Proxy: /admin</h1>
+                                        <h1 className='text-white'>Login for admin</h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -66,7 +66,7 @@ const Routes = createBrowserRouter([
   { path: '/profile', element: <Test__Profile /> },
   { path: '/profile/updateprofile', element: <Test__UpdateProfile /> },
   { path: '/apikeys', element: <Test__Api /> },
-  { path: '/798764577', element: <AdminLogin /> },
+  { path: '/admin', element: <AdminLogin /> },
 ])
 
 export default Routes
