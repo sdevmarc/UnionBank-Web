@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "url": "http://192.168.10.12/YACAPIN",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148317025832982/WNE.png?ex=66a074b0&is=669f2330&hm=b8944d437ec5d8178ed728317bd314700d2a7a7063b3dec0a8cfda964d9e69c5&=&format=webp&quality=lossless&width=500&height=268",
+            "caption": "Watch and earn",
+            "alt": "Watch and earn"
+        },
+        {
+            "id": 2,
+            "url": "http://192.168.10.13",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148315775795261/TiagoShopLogo.png?ex=66a074af&is=669f232f&hm=27ebc423b5260b94e53c352fdbb8bb6eea4c14d6a9a3f706a5aff6548958c808&=&format=webp&quality=lossless&width=625&height=625",
+            "caption": "TiagoShop",
+            "alt": "TiagoShop"
+        },
+        {
+            "id": 3,
+            "url": "http://192.168.10.15",
+            "image": "",
+            "caption": "MetroBank",
+            "alt": "MetroBank"
+        },
+        {
+            "id": 4,
+            "url": "http://192.168.10.17/login",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148175786971226/CLickers.png?ex=66a0748e&is=669f230e&hm=0da5f203e4f34dcb0d062bd5a49722c537813b478a3074c16d80a84b6def129d&=&format=webp&quality=lossless&width=662&height=662",
+            "caption": "Clickers",
+            "alt": "Clickers"
+        },
+        {
+            "id": 5,
+            "url": "http://192.168.10.18:3000",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148175308685415/CafeReyes.png?ex=66a0748e&is=669f230e&hm=7035f6d666c48e3166ecb9b0a0e694f8e7022f96f66e1ac068e2ced4e8d7bef8&=&format=webp&quality=lossless&width=1288&height=662",
+            "caption": "Cafe Reyes",
+            "alt": "Cafe Reyes"
+        },
+        {
+            "id": 6,
+            "url": "http://192.168.10.19",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148176810250261/kfc.png?ex=66a0748e&is=669f230e&hm=26cf50cdf7d840fe3394fc5e5b0048a0eebfe8e2e068458987aaefd910ea218f&=&format=webp&quality=lossless&width=537&height=285",
+            "caption": "KFC",
+            "alt": "KFC"
+        },
+        {
+            "id": 7,
+            "url": "http://192.168.10.21",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148178991288420/OHMART.jpg?ex=66a0748f&is=669f230f&hm=ef6b44b5ba945f739221c5b4a3992efaaf51bc8429fb557db6fecc4b1aafbde1&=&format=webp&width=662&height=662",
+            "caption": "Oh Mart",
+            "alt": "Oh Mart"
+        },
+        {
+            "id": 8,
+            "url": "http://192.168.10.22",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148316421718128/tx.png?ex=66a074af&is=669f232f&hm=5b592f66b0f8b91f7925db365d11a6d22777a1ec15d4964fade4cbff2fd610a9&=&format=webp&quality=lossless&width=1152&height=662",
+            "caption": "TX",
+            "alt": "TX"
+        },
+        {
+            "id": 9,
+            "url": "http://192.168.10.23",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148178114678845/Motortrade.jpg?ex=66a0748e&is=669f230e&hm=870ed6ef4078ec383a2f428799533c8078c9b0753f282090d507b6fea53dd2ca&=&format=webp&width=662&height=662",
+            "caption": "Moto",
+            "alt": "Moto"
+        },
+        {
+            "id": 10,
+            "url": "http://192.168.10.24",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148178630574183/NationalBookStore.jpg?ex=66a0748f&is=669f230f&hm=fdaee005f1185465dddce05563d80e18b8581ba876e019b12872cc1a250a1e8e&=&format=webp&width=268&height=95",
+            "caption": "National Bookstore",
+            "alt": "National Bookstore"
+        },
+        {
+            "id": 11,
+            "url": "http://192.168.10.25",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148315218083941/SavemoreLogo.png?ex=66a074af&is=669f232f&hm=463f603fcf1cfdb56f19535f5991bd94cdb6b34625f2da8e5d253fb2c6224949&=&format=webp&quality=lossless&width=1200&height=566",
+            "caption": "Savemore",
+            "alt": "Savemore"
+        },
+        {
+            "id": 12,
+            "url": "http://192.168.10.26",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148177179476030/Logo.jpg?ex=66a0748e&is=669f230e&hm=cd8e3cb428ee990c0d73e030c9136db76002534a1aad1fbc32903c0f80ab3621&=&format=webp&width=662&height=662",
+            "caption": "Shoepatoes",
+            "alt": "Shoepatoes"
+        },
+        {
+            "id": 13,
+            "url": "http://192.168.10.27",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148316740616333/WATSONS.png?ex=66a074b0&is=669f2330&hm=fbbbfe8150bdf18478f9c45c8052faf6ad6ea1eb4bdb34476a6db41a279164e4&=&format=webp&quality=lossless&width=1440&height=316",
+            "caption": "Watsons",
+            "alt": "Watsons"
+        },
+        {
+            "id": 14,
+            "url": "http://192.168.10.29",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148176206266471/INGCO.png?ex=66a0748e&is=669f230e&hm=f5b6cbd22e7f0415bbf463b751b6050462f76125fb5947b8d3c2d735fd05e33d&=&format=webp&quality=lossless&width=875&height=247",
+            "caption": "INGCO",
+            "alt": "INGCO"
+        },
+        {
+            "id": 15,
+            "url": "http://192.168.10.36",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148177728929853/MedPoint.png?ex=66a0748e&is=669f230e&hm=77b5a73e92c676e520718d38d594ce7914055c42c049124ebdeeebea0ab37922&=&format=webp&quality=lossless&width=662&height=662",
+            "caption": "Medpoint",
+            "alt": "Medpoint"
+        },
+        {
+            "id": 16,
+            "url": "http://192.168.10.37",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148314949779610/ParaPo.png?ex=66a074af&is=669f232f&hm=96e03a2b1fc08b9a3166c0baa9aab38d689394af040f9cbe6140add5edd284e0&=&format=webp&quality=lossless&width=625&height=625",
+            "caption": "ParaPo!",
+            "alt": "ParaPo!"
+        },
+        {
+            "id": 17,
+            "url": "http://192.168.10.38",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148316073726013/Toyota.png?ex=66a074af&is=669f232f&hm=690c2afc9960cbbcb27b3d29b8a6cf5b3c2ceedd92986802dd4445f52bbbbae0&=&format=webp&quality=lossless&width=615&height=500",
+            "caption": "Toyota",
+            "alt": "Toyota"
+        },
+        {
+            "id": 18,
+            "url": "http://192.168.10.41",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148315478003712/SkyEase.png?ex=66a074af&is=669f232f&hm=ed6232a437d61f805428e560ba32a941fed4fc7ebd34cc9ca2a3b1c42c71541d&=&format=webp&quality=lossless&width=640&height=640",
+            "caption": "SkyEase",
+            "alt": "SkyEase"
+        },
+        {
+            "id": 19,
+            "url": "http://192.168.10.42",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148314656047134/pagTurugan.png?ex=66a074af&is=669f232f&hm=80382fcc4797218a22dd1931c91a8df4e7aee1b7a3fcc1a177f749d397ab327a&=&format=webp&quality=lossless&width=662&height=662",
+            "caption": "pag TURUGAN",
+            "alt": "pag TURUGAN"
+        },
+        {
+            "id": 20,
+            "url": "http://192.168.10.43",
+            "image": "https://media.discordapp.net/attachments/1184877075555962990/1265148177439260684/LRT-LOGO.png?ex=66a0748e&is=669f230e&hm=fc8d38e1568a0816313dbe24e8c820a62ec24c47cfb01bc7bd693e66f1870415&=&format=webp&quality=lossless&width=662&height=662",
+            "caption": "LRT",
+            "alt": "LRT"
+        },
+        {
+            "id": 21,
+            "url": "http://192.168.10.45",
+            "image": "",
+            "caption": "Godsplan Logistics",
+            "alt": "Godsplan Logistics"
+        }
+    ]
+}

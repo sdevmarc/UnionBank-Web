@@ -1,0 +1,31 @@
+
+.data-grid {
+    color: inherit;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark .data-grid {
+    color: white;
+}
+.dark .data-grid .MuiDataGrid-columnHeaderTitle {
+    color: white;
+}
+.dark .data-grid .MuiDataGrid-columnHeader {
+    background: #111111;
+}
+
+.dark .data-grid .MuiDataGrid-cell,
+.dark .data-grid .MuiDataGrid-footerContainer,
+.dark .data-grid .MuiDataGrid-columnSeparator {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark .data-grid .MuiTablePagination-root,
+.dark .data-grid .MuiTablePagination-selectLabel,
+.dark .data-grid .MuiTablePagination-displayedRows,
+.dark .data-grid .MuiTablePagination-selectIcon,
+.dark .data-grid .MuiTablePagination-actions {
+    color: white;
+}

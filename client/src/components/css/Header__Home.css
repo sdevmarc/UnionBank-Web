@@ -1,0 +1,12 @@
+.homenavs a {
+    color: #7ba1bf;
+}
+
+.homenavs a.active {
+    color: white;
+}
+
+.homenavs a:hover {
+    color: white;
+    transition: .3s ease;
+}
