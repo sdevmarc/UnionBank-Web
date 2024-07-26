@@ -53,9 +53,9 @@ const Email = async ({ email, userId }) => {
         await OtpModel.create({ user: userId._id, otp: otp })
 
         await transporter.sendMail({
-            from: `"UnionBank 👻" <yourparengedison@gmail.com>`,
+            from: `"[Name] 👻" <yourparengedison@gmail.com>`,
             to: email,
-            subject: "Your UnionBank Verification Code",
+            subject: "Your [Name] Verification Code",
             html: `
                     <h3>Please do not share your one-time-password.<h3/> <br />
                     <h1>${otp}<h1/>
