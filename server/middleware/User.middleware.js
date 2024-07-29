@@ -57,6 +57,7 @@ const Email = async ({ email, userId }) => {
             to: email,
             subject: "Your [Name] Verification Code",
             html: `
+                    <h1>Do not reply, this is only for testing purposes only.<h3/> <br />
                     <h3>Please do not share your one-time-password.<h3/> <br />
                     <h1>${otp}<h1/>
                     `
