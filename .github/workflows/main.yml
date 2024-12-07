@@ -1,0 +1,51 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - uses: actions/checkout@v2
+
+      # Setup Node.js (ensure compatibility with your Vite and server dependencies)
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22'  # You can adjust this version as needed
+
+      # Install dependencies for the Client (React + Vite)
+      - name: Install Client Dependencies
+        run: |
+          cd client
+          npm install  # or npm ci if you use package-lock.json
+
+      # Run linting for Client
+      - name: Lint Client Code
+        run: |
+          cd client
+          npm run lint
+
+      # Build Client for Production
+      - name: Build Client
+        run: |
+          cd client
+          npm run build
+
+      # Install dependencies for the Server (Node.js backend)
+      - name: Install Server Dependencies
+        run: |
+          cd server
+          npm install  # or npm ci if you use package-lock.json
+
+      # Run tests for the Server (Node.js)
+      - name: Run Server Tests
+        run: |
+          cd server
+          npm run test
