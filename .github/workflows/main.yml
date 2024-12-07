@@ -65,7 +65,7 @@ jobs:
         with:
           name: node-app
 
-      # Deploy to Azure WebApp
+      # Deploy to Azure WebApp and added action
       - name: Deploy to Azure WebApp
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
