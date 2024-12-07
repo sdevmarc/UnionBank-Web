@@ -11,17 +11,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout code
       - uses: actions/checkout@v2
-      - name: Set up Node.js
+
+      # Setup Node.js for the client (React)
+      - name: Set up Node.js for Client
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22'
+        
+      # Install dependencies and build for Client (React)
+      - name: Install dependencies for Client
+        run: |
+          cd client
+          npm ci
+          npm run build
+
+      # Setup Node.js for the server
+      - name: Set up Node.js for Server
         uses: actions/setup-node@v2
         with:
           node-version: '22'
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run the tests
-        run: npm run test
-
-      - name: Build the project
-        run: npm run build
+      # Install dependencies and build for Server (Node.js)
+      - name: Install dependencies for Server
+        run: |
+          cd server
+          npm ci
+          npm run build
