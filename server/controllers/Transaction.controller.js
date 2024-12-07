@@ -254,7 +254,50 @@ const TransactionController = {
         } catch (error) {
             res.json({ success: false, message: 'SearchTransaction in transaction controller error', error })
         }
-    }
+    },
+
+    HighestTransaction: async (req, res) => {
+        try {
+            // Find the highest deposit
+            const highestDeposit = await TransactionModel.findOne({ transactionType: 'deposit' })
+                .sort({ amount: -1 }) // Sort in descending order of amount
+                .limit(1); // Get only the top record
+    
+            // Find the highest withdrawal
+            const highestWithdrawal = await TransactionModel.findOne({ transactionType: 'withdrawal' })
+                .sort({ amount: -1 }) // Sort in descending order of amount
+                .limit(1); // Get only the top record
+    
+            res.json({
+                success: true,
+                message: 'Fetched highest transactions successfully!',
+                data: {
+                    highestDeposit: highestDeposit
+                        ? {
+                              amount: highestDeposit.amount,
+                              description: highestDeposit.description,
+                              createdAt: highestDeposit.createdAt,
+                          }
+                        : null,
+                    highestWithdrawal: highestWithdrawal
+                        ? {
+                              amount: highestWithdrawal.amount,
+                              description: highestWithdrawal.description,
+                              createdAt: highestWithdrawal.createdAt,
+                          }
+                        : null,
+                },
+            });
+        } catch (error) {
+            res.json({
+                success: false,
+                message: 'Error fetching highest transactions',
+                error,
+            });
+        }
+    },
+    
+
 }
 
 module.exports = TransactionController

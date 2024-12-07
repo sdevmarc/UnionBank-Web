@@ -39,5 +39,11 @@ router.get('/searchtransactions/:searchId',
     TransactionController.SearchTransaction
 )
 
+// Add route for highest transactions
+router.get('/highesttransactions',
+    TransactionMiddleware.CheckDeveloperTokenValid, // Optional middleware to validate token
+    TransactionController.HighestTransaction // Controller method to fetch highest transactions
+);
+
 
 module.exports = router
