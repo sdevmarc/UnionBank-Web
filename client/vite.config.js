@@ -6,8 +6,8 @@ import path from "path"
 export default defineConfig({
     plugins: [react()],
     build: {
-        sourcemap: process.env.NODE_ENV !== 'production',
-    },
+        sourcemap: true, // Ensure this is enabled
+      },
     server: {
         // host: '192.168.10.14',
         // port: '80'
