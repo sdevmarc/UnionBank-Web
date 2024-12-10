@@ -7,7 +7,6 @@ import axios from 'axios'
 const { VITE_HOST, VITE_ADMIN_TOKEN } = import.meta.env
 
 export default function Withdrawal() {
-    const { toast } = useToast()
     const { accountid } = useParams()
     const [values, setValues] = useState({
         account: '',

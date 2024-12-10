@@ -7,7 +7,6 @@ import {
     AlertDialogFooter,
     AlertDialogHeader,
     AlertDialogTitle,
-    AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
 export function AlertDialogs({ open, onClose, onConfirm, content }) {

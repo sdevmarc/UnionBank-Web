@@ -9,7 +9,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications'
 import { useQuery } from "@tanstack/react-query"
 
 export function NotificationPopover() {
-    const { data: credentials = '', isLoading: credentialsLoading } = useQuery({
+    const { data: credentials = ''} = useQuery({
         queryFn: () => fetchCredentials(),
         queryKey: ['notificationsCredentials']
     })

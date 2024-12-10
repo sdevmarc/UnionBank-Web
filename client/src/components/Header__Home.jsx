@@ -1,25 +1,23 @@
 import Logo from '../assets/LogoUB.png'
 import { NavLink } from 'react-router-dom'
-import axios from 'axios'
-const { VITE_HOST, VITE_ADMIN_TOKEN } = import.meta.env
 import './css/Header__Home.css'
 
 export default function Header__Home() {
 
-    const handleClick = async () => {
-        try {
-            const sampleAccountNo = '000000005'
-            const res = await axios.get(`${VITE_HOST}/api/unionbank/myaccount/auth/${sampleAccountNo}`, {
-                headers: {
-                    Authorization: `Bearer ${VITE_ADMIN_TOKEN}`
-                }
-            })
-            const url = res?.data?.url
-            window.open(url, '_blank', 'width=1080,height=600')
-        } catch (error) {
-            console.error()
-        }
-    }
+    // const handleClick = async () => {
+    //     try {
+    //         const sampleAccountNo = '000000005'
+    //         const res = await axios.get(`${VITE_HOST}/api/unionbank/myaccount/auth/${sampleAccountNo}`, {
+    //             headers: {
+    //                 Authorization: `Bearer ${VITE_ADMIN_TOKEN}`
+    //             }
+    //         })
+    //         const url = res?.data?.url
+    //         window.open(url, '_blank', 'width=1080,height=600')
+    //     } catch (error) {
+    //         console.error()
+    //     }
+    // }
 
     return (
         <>

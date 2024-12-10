@@ -1,5 +1,4 @@
 import { DeleteAnnouncement, GetAllAnnouncement } from '@/api/Admin'
-import { fetchCredentials } from '@/api/Credentials'
 import DataGrids from '@/components/DataGrids'
 import HeaderDashboard from '@/components/Header__dashboard'
 import Sidebar from '@/components/Sidebar'
@@ -12,17 +11,12 @@ export default function MaintenaceList() {
     const { toast } = useToast()
     const navigate = useNavigate()
 
-    const { data: credentials = '', isLoading: credentialsLoading } = useQuery({
-        queryFn: () => fetchCredentials(),
-        queryKey: ['accountsCredentials']
-    })
-
     const { data: anouncements = [], refetch: refetchAnnouncements } = useQuery({
         queryFn: () => GetAllAnnouncement(),
         queryKey: ['getallannouncements']
     })
 
-    const { mutateAsync: deleteAnnocement, isPending: deleteAnnouncementLoading } = useMutation({
+    const { mutateAsync: deleteAnnocement } = useMutation({
         mutationFn: DeleteAnnouncement,
         onSuccess: (data) => {
             if (data?.success) {
@@ -39,10 +33,6 @@ export default function MaintenaceList() {
     //     queryKey: ['searchRbAccounts', search],
     //     enabled: !!search
     // })
-
-    const handleWithdraw = (e) => {
-        navigate(`/ledger/withdrawal/${e}`)
-    }
 
     // useEffect(() => {
     //     if (!credentials && !credentialsLoading) { navigate('/unionbank') }

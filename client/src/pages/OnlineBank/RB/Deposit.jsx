@@ -21,7 +21,7 @@ export default function Deposit() {
 
     const userId = credentials?.userId
 
-    const { data: account = '', isLoading: accountLoading } = useQuery({
+    const { data: account = ''} = useQuery({
         queryFn: () => fetchAccount({ userId: accountid }),
         queryKey: ['testdepositaccount', { accountid }]
     })

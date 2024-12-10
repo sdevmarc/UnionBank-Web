@@ -28,12 +28,12 @@ export default function Customers() {
         queryKey: ['credentialsCustomers']
     })
 
-    const { data: rbusers = [], isLoading: rbusersLoading, refetch: refetchRbUsers } = useQuery({
+    const { data: rbusers = [], refetch: refetchRbUsers } = useQuery({
         queryFn: () => fetchRBUsers(),
         queryKey: ['rbusers']
     })
 
-    const { data: searchrbusers = [], isLoading: searchrbusersLoading } = useQuery({
+    const { data: searchrbusers = [] } = useQuery({
         queryFn: () => SearchRBUsers(searchIdRbUser),
         queryKey: ['searchRBUsers', searchIdRbUser],
         enabled: !!searchIdRbUser,
@@ -42,12 +42,12 @@ export default function Customers() {
 
 
 
-    const { data: rbaccounts = [], isLoading: rbaccountsLoading, refetch: refetchRbAccounts } = useQuery({
+    const { data: rbaccounts = [],  refetch: refetchRbAccounts } = useQuery({
         queryFn: () => CustomerfetchRBAccounts(),
         queryKey: ['customerFetchRbAccounts']
     })
 
-    const { data: searchrbaccounts = [], isLoading: searchrbaccountsLoading } = useQuery({
+    const { data: searchrbaccounts = [],} = useQuery({
         queryFn: () => CustomersSearchRBAccounts(searchIdRbAccounts),
         queryKey: ['CustomerSearchRBAccounts', searchIdRbAccounts],
         enabled: !!searchIdRbAccounts,

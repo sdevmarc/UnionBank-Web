@@ -1,6 +1,4 @@
 import { GetAllAnnouncement } from '@/api/Admin'
-import SolanaPic from '../../assets/SolanaPic.webp'
-import Gradient from '../../assets/BlurLayer.png'
 import { fetchCredentials } from '@/api/Credentials'
 import Maintenance from '@/components/__tests__/Maintenance'
 import Announcement from '@/components/Announcement'
@@ -13,7 +11,7 @@ import { DragCards } from '@/components/Cards'
 
 export default function Showcase() {
     const navigate = useNavigate()
-    const [announcement, setAnnouncement] = useState('')
+    // const [announcement, setAnnouncement] = useState('')
 
     const { data: credentials = '', isLoading: credentialsLoading } = useQuery({
         queryFn: () => fetchCredentials(),
@@ -44,7 +42,7 @@ export default function Showcase() {
 
             <div className='relative overflow-x-hidden w-full h-screen flex justify-start items-center flex-col bg-[#121212]'>
                 <Header__Home />
-                <Announcement color={`#000000`} content={announcement} />
+                <Announcement color={`#000000`} />
                 <div className="w-full flex flex-col justify-evenly items-center relative">
                     <div className="w-full flex flex-col justify-start items-start">
                         <div className="w-full h-screen flex justify-center items-center">

@@ -17,7 +17,7 @@ export default function Transactions() {
 
     const userId = credentials?.userId
 
-    const { data: usertransactions, isLoading: usertransactionsLoading } = useQuery({
+    const { data: usertransactions } = useQuery({
         queryFn: () => fetchUserTransactions({ userId }),
         queryKey: ['UserTransactions', { userId }],
         enabled: !!userId

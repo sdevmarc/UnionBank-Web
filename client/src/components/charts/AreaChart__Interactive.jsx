@@ -42,7 +42,7 @@ const chartConfig = {
 };
 
 function AreaChart_Interactive({ title, subtitle }) {
-    const { data: analyticsRB, isLoading: rbLoading } = useQuery({
+    const { data: analyticsRB } = useQuery({
         queryFn: () => ANALYTICS_RB(),
         queryKey: ['analyticsRB']
     })

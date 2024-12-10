@@ -40,7 +40,7 @@ export default function Test__Dashboard() {
         refetchInterval: 5000
     })
 
-    const { data: fetchAnnouncements = [], isLoading: announcementLoading } = useQuery({
+    const { data: fetchAnnouncements = [] } = useQuery({
         queryFn: () => GetAllAnnouncement(),
         queryKey: ['testdashboardgetAnnouncements'],
         refetchInterval: 5000

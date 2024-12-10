@@ -1,5 +1,4 @@
 import Header__Home from '@/components/Header__Home'
-import React from 'react'
 import Lottie from "lottie-react";
 import LottieError from '../../assets/Error.json'
 

@@ -20,13 +20,13 @@ export default function Test__Statement() {
 
     const userId = credentials?.userId
 
-    const { data: usertransactions = [], isLoading: usertransactionsLoading } = useQuery({
+    const { data: usertransactions = [] } = useQuery({
         queryFn: () => fetchUserTransactions({ userId }),
         queryKey: ['newUserTransactions', { userId }],
         enabled: !!userId
     })
 
-    const { data: fetchAnnouncements = [], isLoading: announcementLoading } = useQuery({
+    const { data: fetchAnnouncements = [] } = useQuery({
         queryFn: () => GetAllAnnouncement(),
         queryKey: ['teststatementgetAnnouncements'],
         refetchInterval: 5000

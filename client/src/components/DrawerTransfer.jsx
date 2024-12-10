@@ -24,7 +24,7 @@ export function DrawerTransfer() {
         amount: ''
     })
 
-    const { data: credentials = '', isLoading: credentialsLoading } = useQuery({
+    const { data: credentials = ''} = useQuery({
         queryFn: () => fetchCredentials(),
         queryKey: ['credentialsDrawerTransfer']
     })
@@ -32,7 +32,7 @@ export function DrawerTransfer() {
     const userId = credentials?.userId
     const token = credentials?.token
 
-    const { data: account = '', isLoading: accountLoading } = useQuery({
+    const { data: account = '' } = useQuery({
         queryFn: () => fetchAccount({ userId }),
         queryKey: ['accountsDrawerTransfer', { userId }],
         enabled: !!userId
@@ -40,7 +40,7 @@ export function DrawerTransfer() {
 
     const accountno = account?.accountno
 
-    const { mutateAsync: Transfer, isPending: transferLoading } = useMutation({
+    const { mutateAsync: Transfer } = useMutation({
         mutationFn: fetchTransfer,
         onSuccess: (data) => {
             if (data?.success) return toast({ title: "Success! 🎉", description: data?.message })

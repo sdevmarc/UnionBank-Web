@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react'
+import  { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Sidebar from '../../components/Sidebar'
 import Header__Dashboard from '../../components/Header__dashboard'
@@ -15,7 +15,7 @@ export default function AccountStatement() {
     })
     const userId = credentials?.userId
 
-    const { data: accounts, isLoading: accountsLoading, isFetched: accountsFetched } = useQuery({
+    const { data: accounts} = useQuery({
         queryFn: () => fetchAccount({ userId }),
         queryKey: ['carddetailsAccounts', { userId }],
         enabled: !!userId

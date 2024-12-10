@@ -18,7 +18,7 @@ import { fetchAccount } from '@/api/Accounts';
 export default function Sidebar() {
     const navigate = useNavigate()
 
-    const { data: credentials, isLoading: credentialsLoading, isFetched: credentialsFetched } = useQuery({
+    const { data: credentials} = useQuery({
         queryFn: () => fetchCredentials(),
         queryKey: ['sidebarCredentials']
     })
@@ -26,7 +26,7 @@ export default function Sidebar() {
     const userId = credentials?.userId
     const role = credentials?.role
 
-    const { data: carddetails, isLoading: cardLoading } = useQuery({
+    const { data: carddetails } = useQuery({
         queryFn: () => fetchAccount({ userId }),
         queryKey: ['sidebarBalance', { userId }],
         enabled: !!userId,

@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import ShowCase from '../assets/showcase.json'
 import { useNavigate } from "react-router-dom";
 import SolanaPic from '../assets/SolanaPic.webp'
 
-export const DragCards = ({ showcase }) => {
+export const DragCards = () => {
 
     return (
         <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950">
@@ -22,10 +22,6 @@ export const DragCards = ({ showcase }) => {
 const Cards = () => {
     const containerRef = useRef(null);
     const navigate = useNavigate
-
-    const handleNavigate = (url) => {
-        navigate(url)
-    }
 
     const getRandomRotate = () => `${Math.random() * 30 - 15}deg`;
     const getRandomTop = () => `${Math.random() * 60 + 10}%`;

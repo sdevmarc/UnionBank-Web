@@ -27,7 +27,7 @@ export default function SignUp() {
         queryKey: ['signupCredentials']
     })
 
-    const { data: fetchAnnouncements = [], isLoading: announcementLoading } = useQuery({
+    const { data: fetchAnnouncements = [] } = useQuery({
         queryFn: () => GetAllAnnouncement(),
         queryKey: ['testdashboardgetAnnouncements'],
         refetchInterval: 5000
@@ -143,23 +143,5 @@ export default function SignUp() {
                 </div>
             </div>
         </>
-    )
-}
-
-function ToastWithTitle() {
-    const { toast } = useToast()
-
-    return (
-        <Button
-            variant="outline"
-            onClick={() => {
-                toast({
-                    title: "Uh oh! Something went wrong.",
-                    description: "There was a problem with your request.",
-                })
-            }}
-        >
-            Show Toast
-        </Button>
     )
 }

@@ -17,7 +17,7 @@ export default function Profile() {
 
     const userId = credentials?.userId
 
-    const { data: profileDetails, isLoading: profileLoading } = useQuery({
+    const { data: profileDetails } = useQuery({
         queryFn: () => fetchProfileDetails({ userId }),
         queryKey: ['profileDetails', { userId }],
         enabled: !!userId

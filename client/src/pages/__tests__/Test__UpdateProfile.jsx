@@ -39,7 +39,7 @@ export default function Test__UpdateProfile() {
         enabled: !!userId
     })
 
-    const { data: fetchAnnouncements = [], isLoading: announcementLoading } = useQuery({
+    const { data: fetchAnnouncements = [] } = useQuery({
         queryFn: () => GetAllAnnouncement(),
         queryKey: ['testupdateprofilegetAnnouncements'],
         refetchInterval: 5000

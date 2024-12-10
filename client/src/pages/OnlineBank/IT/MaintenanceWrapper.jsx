@@ -1,11 +1,10 @@
 import { CreateAnnouncement } from '@/api/Admin'
-import { fetchCredentials } from '@/api/Credentials'
 import HeaderDashboard from '@/components/Header__dashboard'
 import Sidebar from '@/components/Sidebar'
 import { Button } from '@/components/ui/button'
 import { useToast } from '@/components/ui/use-toast'
-import { useMutation, useQuery } from '@tanstack/react-query'
-import { useEffect, useState } from 'react'
+import { useMutation } from '@tanstack/react-query'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function MaintenanceWrapper() {
@@ -22,7 +21,7 @@ export default function MaintenanceWrapper() {
     //     queryKey: ['maintenanceCredentials']
     // })
 
-    const { mutateAsync: Announcement, isPending: AnnouncementLoading } = useMutation({
+    const { mutateAsync: Announcement } = useMutation({
         mutationFn: CreateAnnouncement,
         onSuccess: (data) => {
             if (data?.success) {

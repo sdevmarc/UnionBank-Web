@@ -21,7 +21,7 @@ export default function Dashboard() {
     const userId = credentials?.userId
     const role = credentials?.role
 
-    const { data: carddetails, isLoading: cardLoading } = useQuery({
+    const { data: carddetails } = useQuery({
         queryFn: () => fetchAccount({ userId }),
         queryKey: ['dashboardAccount', { userId }],
         enabled: !!userId,

@@ -17,7 +17,7 @@ export default function Print() {
 
     const userId = credentials?.userId
 
-    const { data: account, isLoading: accountLoading } = useQuery({
+    const { data: account} = useQuery({
         queryFn: () => fetchAccount({ userId }),
         queryKey: ['printaccount', { userId }],
         enabled: !!userId
@@ -25,7 +25,7 @@ export default function Print() {
 
     const accountno = account?.accountno || ''
 
-    const { data: profile = '', isLoading: profileLoading } = useQuery({
+    const { data: profile = '' } = useQuery({
         queryFn: () => fetchProfileDetails({ userId }),
         queryKey: ['printprofile', { userId }],
         enabled: !!userId
@@ -33,7 +33,7 @@ export default function Print() {
 
     const name = profile?.name
 
-    const { data: transactions = [], isLoading: transactionsLoading } = useQuery({
+    const { data: transactions = [] } = useQuery({
         queryFn: () => fetchUserTransactions({ userId }),
         queryKey: ['printtransactions', { userId }],
         enabled: !!userId

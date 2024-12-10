@@ -29,13 +29,13 @@ export default function Test__Api() {
         enabled: !!userId
     })
 
-    const { data: fetchAnnouncements = [], isLoading: announcementLoading } = useQuery({
+    const { data: fetchAnnouncements = [] } = useQuery({
         queryFn: () => GetAllAnnouncement(),
         queryKey: ['testprofilegetAnnouncements'],
         refetchInterval: 5000
     })
 
-    const { mutateAsync: CreateToken, isPending: createtokenLoading } = useMutation({
+    const { mutateAsync: CreateToken } = useMutation({
         mutationFn: API_CreateToken,
         onSuccess: (data) => {
             if (data?.success) {

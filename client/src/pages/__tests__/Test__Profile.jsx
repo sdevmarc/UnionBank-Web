@@ -21,13 +21,13 @@ export default function Test__Profile() {
     const userId = credentials?.userId
     const role = credentials?.role
 
-    const { data: profileDetails = '', isLoading: profileLoading } = useQuery({
+    const { data: profileDetails = '' } = useQuery({
         queryFn: () => fetchProfileDetails({ userId }),
         queryKey: ['newprofileDetails', { userId }],
         enabled: !!userId
     })
 
-    const { data: fetchAnnouncements = [], isLoading: announcementLoading } = useQuery({
+    const { data: fetchAnnouncements = [] } = useQuery({
         queryFn: () => GetAllAnnouncement(),
         queryKey: ['testprofilegetAnnouncements'],
         refetchInterval: 5000

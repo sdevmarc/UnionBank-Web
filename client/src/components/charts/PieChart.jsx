@@ -43,7 +43,7 @@ const chartConfig = {
 };
 
 function PieChartHR() {
-    const { data: analyticsHR, isLoading: hrLoading } = useQuery({
+    const { data: analyticsHR } = useQuery({
         queryFn: () => ANALYTICS_HR(),
         queryKey: ['analyticsHR']
     });
