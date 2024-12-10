@@ -1,23 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 import path from "path"
 
-// https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [react()],
+    plugins: [react({
+        jsxRuntime: 'automatic',
+        fastRefresh: true
+    })],
     build: {
-        sourcemap: true, // Ensure this is enabled
-      },
-    server: {
-        // host: '192.168.10.14',
-        // port: '80'
-        // host: '192.168.68.112',
-        // port: '80'
-        // host: 'localhost',
+        outDir: 'dist', // Default output directory
+        // sourcemap: true, // Ensure sourcemaps are generated
+        sourcemap: process.env.NODE_ENV !== 'production', // Disable sourcemaps in production
     },
     resolve: {
         alias: {
-            "@": path.resolve(__dirname, "./src"),
+            '@': path.resolve(__dirname, './src'),
         },
     },
-})
+});
