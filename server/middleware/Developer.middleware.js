@@ -1,6 +1,6 @@
 const DeveloperModel = require('../models/Developer.model')
 const AuditLog = require('../models/Auditlog.model')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
 
