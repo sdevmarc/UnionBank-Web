@@ -1,4 +1,4 @@
-name: Azure CI/CD
+name: Azure CI/CD for Backend
 
 on:
   push:
@@ -19,10 +19,12 @@ jobs:
         node-version: 18
 
     - name: Install dependencies
+      working-directory: server  # Specify the server folder
       run: npm install
 
-    - name: Build the app
-      run: npm run build
+    # - name: Build the app (Optional, if your backend has a build step)
+    #   working-directory: server  # Specify the server folder
+    #   run: npm run build
 
     - name: Deploy to Azure
       uses: azure/webapps-deploy@v2
