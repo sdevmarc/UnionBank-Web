@@ -40,12 +40,12 @@ const Routes = createBrowserRouter([
   { path: '/carddetails', element: <CardDetails /> },
   { path: '/unionbank/myaccount', element: <UserStatement /> },
 
-  // HR DEPARTMENT
+  // Human Resource DEPARTMENT
   { path: '/employees', element: <Employees /> },
   { path: '/employees/:userId', element: <ManageEmployees /> },
   { path: '/employees/manageemployee', element: <ManageEmployees /> },
 
-  //RB DEPARTMENT
+  //Retail Banking DEPARTMENT
   { path: '/customers', element: <Customers /> },
   { path: '/ledger', element: <Accounts /> },
   { path: '/ledger/:accountid', element: <Ledger /> },
@@ -59,7 +59,7 @@ const Routes = createBrowserRouter([
   { path: '/auditlog', element: <AuditLog /> },
 
 
-  //TEST
+  //TEST - PROTOTYPE
   { path: '/', element: <Test__Dashboard /> },
   { path: '/statement', element: <Test__Statement /> },
   { path: '/statement/print', element: <Print /> },
